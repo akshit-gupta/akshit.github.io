@@ -128,6 +128,30 @@
 </div>
 {% endif %}
 
+{% elsif page.header.background-color-with-text %}
+
+<div id="masthead-with-background-color-with-text" style="background: {{ page.header.background-color-with-text }};">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="masthead-title" >Mahamaya Paints & Chemicals</div>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+{% if page.breadcrumb == true %}
+{% include _breadcrumb.html %}
+{% endif %}
+
+{% if page.header.caption_url && page.header.caption %}
+<div class="masthead-caption">
+	<a href="{{ page.header.caption_url }}">{{ page.header.caption }}</a>
+</div>
+{% elsif page.header.caption %}
+<div class="masthead-caption">
+	{{ page.header.caption }}
+</div>
+{% endif %}
+
 
 
 

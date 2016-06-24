@@ -32,7 +32,7 @@ header:
 ~~~
 
 
-### All Header-Styles 
+### All Header-Styles
 {: .t60 }
 
 {% include list-posts tag='header' %}

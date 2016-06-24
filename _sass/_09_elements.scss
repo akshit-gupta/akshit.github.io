@@ -30,7 +30,79 @@
     margin-top: $spacing-unit;
 }
 
+.bdr5 {
+  border-radius: 50%;
+}
+.m13 {
+  margin-right: 10px;
+}
+.ds1 {
+  display: inline-block;
+}
+.w8 {
+  width: 40px;
+  height: 40px;
+  vertical-align: text-bottom;
+}
+.bg4 {
+  background-color: #7E7E7E;
+}
 
+.sp {
+  background-image: url("http://tdw.imimg.com/template-tdw/d0056/d0056_Cyanshade-White-Black/sprite.png?v=3");
+}
+
+.location_icon{
+  background-image: url("{{ site.urlimg }}/{{ site.location_icon }}");
+}
+
+.eamil2 {
+  background-position: -33px -79px;
+  width: 22px;
+  height: 14px;
+  margin: 14px 0 0 10px;
+}
+
+.ds {
+  display: block;
+}
+
+.call2 {
+  background-position: -84px -2px;
+  width: 17px;
+  height: 25px;
+}
+
+.m12 {
+  margin: 9px 0 0 10px;
+}
+
+.nwcn .mg1 {
+  width: 19px;
+  height: 26px;
+  background-position: 0 0;
+}
+.nwcn .mg {
+  background-image: url("http://tdw.imimg.com/template-tdw/d0056/cnt.png");
+  display: inline-block;
+}
+
+.loc1 {
+  width: 19px;
+  height: 27px;
+  background-position: -124px 0px;
+}
+.ds1 {
+  display: inline-block;
+}
+.m3 {
+  margin-right: 10px;
+}
+
+
+.fl_p {
+  float: left;
+}
 
 /* Panel
 ------------------------------------------------------------------- */

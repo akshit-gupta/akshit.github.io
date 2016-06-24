@@ -1,35 +1,26 @@
-- title: Start
+- title: Mahamaya Paints & Chemicals
   url: "/"
   side: left
 
-- title: Getting Started
-  url: "/getting-started/"
+- title: About
+  url: "/about/"
   side: left
 
-- title: "Templates"
-  url: "/design/"
+- title: Pesticides
+  url: "/pesticides/"
   side: left
-  dropdown:
-  - title: "Grid & Colors"
-    url: "/design/grid/"
-  - title: "Typography"
-    url: "/design/typography/typography/"
-  - title: "Page/Post"
-    url: "/design/page/"
-  - title: "Post-Left-Sidebar"
-    url: "/design/post-left-sidebar/"
-  - title: "Post-Right-Sidebar"
-    url: "/design/post-right-sidebar/"
-  - title: "Page Full-Width"
-    url: "/design/page-fullwidth/"
-  - title: "Blog-Page"
-    url: "/blog/"
-  - title: "Video"
-    url: "/design/video/"
-  - title: "Gallery"
-    url: "/design/gallery/"
-  - title: "Portfolio"
-    url: "/design/portfolio/"
+
+- title: Industrial Chemicals
+  url: "/chemicals/"
+  side: left
+
+- title: Mineral Powder
+  url: "/minerals/"
+  side: left
+
+- title: All Products
+  url: "/products/"
+  side: left
 
 - title: "Header Styles"
   url: "/headers/"
@@ -49,22 +40,6 @@
     url: "/design/no-header/"
   - title: "No Header but Image"
     url: "/design/no-header-but-image/"
-
-- title: Documentation
-  url: "/documentation/"
-  side: left
-  dropdown:
-  - title: "Changelog"
-    url: "/changelog/"
-  - title: "Roadmap"
-    url: "/roadmap/"
-
-- title: Blog
-  url: "/blog/"
-  side: left
-  dropdown:
-  - title: "Blog Archive"
-    url: "/blog/archive/"
 
 - title: "Search"
   url: "/search/"

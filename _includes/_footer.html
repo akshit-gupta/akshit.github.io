@@ -1,3 +1,4 @@
+{% if page.footer == NULL or page.footer == "no"  %}
     <div id="up-to-top" class="row">
       <div class="small-12 columns" style="text-align: right;">
         <a class="iconfont" href="#top-of-page">&#xf108;</a>
@@ -6,70 +7,149 @@
 
 
     <footer id="footer-content" class="bg-grau">
-      <div id="footer">
-        <div class="row">
-          <div class="medium-6 large-5 columns">
-            <h5 class="shadow-black">{{ site.data.language.info_website }}</h5>
+      <!--<div id="footer">-->
+        <!--<div class="row">-->
+          <!--<div class="medium-6 large-5 columns" style="padding-bottom: 1.5em">-->
 
-            <p class="shadow-black">
-              {{ site.description }}
-              <a href="{{ site.url }}{{ site.baseurl }}/info/">{{ site.data.language.more }}</a>
-            </p>
-          </div><!-- /.large-6.columns -->
+              <!--<span class="loc1 sp ds1 m3"></span>-->
 
+            <!--<h5 class="shadow-black">{{ site.data.language.info_website }}</h5>-->
 
-          <div class="small-6 medium-3 large-3 large-offset-1 columns">
-            {% for service_item in site.data.services %}
-              {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ service_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
+            <!--<div><h7 class="shadow-black">-->
+              <!--{{site.data.language.address_website1}}-->
+              <!--</h7>-->
+            <!--</div>-->
+            <!--<div><h7 class="shadow-black">-->
+              <!--{{site.data.language.address_website2}}-->
+            <!--</h7>-->
+            <!--</div>-->
+            <!--<div><h7 class="shadow-black">-->
+              <!--{{site.data.language.address_website3}}-->
+            <!--</h7>-->
+            <!--</div>-->
+            <!--<div><h7 class="shadow-black">-->
+              <!--{{site.data.language.address_website4}}-->
+            <!--</h7>-->
+            <!--</div>-->
 
-              <ul class="no-bullet shadow-black">
-              {% for service_item in site.data.services %}
-                {% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}
-                  <li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>
-                    <a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>
-                  </li>
-              {% endfor %}
-              </ul>
-          </div><!-- /.large-4.columns -->
+          <!--</div>&lt;!&ndash; /.large-6.columns &ndash;&gt;-->
 
 
-          <div class="small-6 medium-3 large-3 columns">
-            {% for network_item in site.data.network %}
-              {% if forloop.first == true %}
-                <h5 class="shadow-black">{{ network_item.menu_name }}</h5>
-              {% endif %}
-            {% endfor %}
+          <!--<div class="small-6 medium-3 large-3 large-offset-1 columns">-->
+            <!--&lt;!&ndash;<div href="" class="icon-github" ></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;{% for service_item in site.data.services %}&ndash;&gt;-->
+              <!--&lt;!&ndash;{% if forloop.first == true %}&ndash;&gt;-->
+                <!--&lt;!&ndash;<h5 class="shadow-black">{{ service_item.menu_name }}</h5>&ndash;&gt;-->
+              <!--&lt;!&ndash;{% endif %}&ndash;&gt;-->
+            <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
 
-            <ul class="no-bullet shadow-black">
-            {% for network_item in site.data.network %}
-              {% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}
-                <li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>
-                  <a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>
-                </li>
-            {% endfor %}
-            </ul>
-          </div><!-- /.large-3.columns -->
-        </div><!-- /.row -->
-
-      </div><!-- /#footer -->
+              <!--&lt;!&ndash;<ul class="no-bullet shadow-black">&ndash;&gt;-->
+              <!--&lt;!&ndash;{% for service_item in site.data.services %}&ndash;&gt;-->
+                <!--&lt;!&ndash;{% if service_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}&ndash;&gt;-->
+                  <!--&lt;!&ndash;<li {% if service_item.class %}class="{{ service_item.class }}" {% endif %}>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<a href="{{ domain }}{{ service_item.url }}" {% if service_item.url contains 'http' %}target="_blank" {% endif %} title="{{ service_item.title }}">{{ service_item.name }}</a>&ndash;&gt;-->
+                  <!--&lt;!&ndash;</li>&ndash;&gt;-->
+              <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+              <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+          <!--</div>&lt;!&ndash; /.large-4.columns &ndash;&gt;-->
 
 
-      <div id="subfooter">
-        <nav class="row">
-          <section id="subfooter-left" class="small-12 medium-6 columns credits">
-            {{ site.credits }}
-          </section>
+          <!--<div class="small-6 medium-3 large-3 columns" style="margin-top: 2em">-->
+              <!--<div><h7 >-->
+                  <!--<span class="bg4 w8 ds1 bdr5 m13"><span class="sp eamil2 ds"></span></span>-->
+                  <!--<span>mahamayapaints@yahoo.co.in</span>-->
+                    <!--</h7>-->
+              <!--</div>-->
 
-          <section id="subfooter-right" class="small-12 medium-6 columns">
-            <ul class="inline-list social-icons">
-            {% for social_item in site.data.socialmedia %}
-              <li><a href="{{ social_item.url }}" target="_blank" class="{{ social_item.class }}" title="{{ social_item.title }}"></a></li>
-            {% endfor %}
-            </ul>
-          </section>
-        </nav>
-      </div><!-- /#subfooter -->
+            <!--<div><h7 class="shadow-black">-->
+ <!--&nbsp;-->
+            <!--</h7>-->
+            <!--</div>-->
+            <!--<div><h7 class="shadow-black">-->
+                <!--<span class="bg4 w8 ds1 bdr5 m13"><span class="sp call2 ds m12"></span></span>-->
+                <!--01232-225362, 227870-->
+            <!--</h7>-->
+            <!--</div>-->
+            <!--<div><h7 class="shadow-black">-->
+              <!--+91 9837066299-->
+            <!--</h7>-->
+            <!--</div>-->
+            <!--&lt;!&ndash;{% for network_item in site.data.network %}&ndash;&gt;-->
+              <!--&lt;!&ndash;{% if forloop.first == true %}&ndash;&gt;-->
+                <!--&lt;!&ndash;<h5 class="shadow-black">{{ network_item.menu_name }}</h5>&ndash;&gt;-->
+              <!--&lt;!&ndash;{% endif %}&ndash;&gt;-->
+            <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<ul class="no-bullet shadow-black">&ndash;&gt;-->
+            <!--&lt;!&ndash;{% for network_item in site.data.network %}&ndash;&gt;-->
+              <!--&lt;!&ndash;{% if network_item.url contains 'http' %}{% assign domain = '' %}{% else %}{% assign domain = site.url + site.baseurl %}{% endif %}&ndash;&gt;-->
+                <!--&lt;!&ndash;<li {% if network_item.class %}class="{{ network_item.class }}" {% endif %}>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<a href="{{ domain }}{{ network_item.url }}" {% if network_item.url contains 'http' %}target="_blank" {% endif %} title="{{ network_item.title }}">{{ network_item.name }}</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;{% endfor %}&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+          <!--</div>&lt;!&ndash; /.large-3.columns &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; /.row &ndash;&gt;-->
+
+      <!--</div>&lt;!&ndash; /#footer &ndash;&gt;-->
+
+
+
+        <div id="footer">
+
+        <div class="row" style="max-width: 50%">
+
+            <div class="medium-4 columns" style="width: 60%">
+
+
+                <h5 style="margin-top: 0em">
+                    <span class="bg4 w8 ds1 bdr5 m13" style="vertical-align: middle">
+                        <img src="{{ site.urlimg }}/{{ site.location_icon}}" style="width: 22px; height: 28px; margin: 5px 0 0 9px"></span>
+                    <span>{{ site.data.language.info_website }}</span>
+                </h5>
+
+                <div style="padding-left: 4em"><h7 class="shadow-black">
+                    {{site.data.language.address_website1}}
+                </h7>
+                </div>
+                <div style="padding-left: 4em"><h7 class="shadow-black">
+                    {{site.data.language.address_website2}}
+                </h7>
+                </div>
+                <div style="padding-left: 4em"><h7 class="shadow-black">
+                    {{site.data.language.address_website3}}
+                </h7>
+                </div>
+                <div style="padding-left: 4em"><h7 class="shadow-black">
+                    {{site.data.language.address_website4}}
+                </h7>
+                </div>
+            </div>
+
+            <div class="medium-4 columns">
+
+                <div><h7 >
+                    <span class="bg4 w8 ds1 bdr5 m13" style="vertical-align: middle"><span class="sp eamil2 ds"></span></span>
+                    <span>mahamayapaints@yahoo.co.in</span>
+                </h7>
+                </div>
+
+                <div><h7 class="shadow-black">
+                    &nbsp;
+                </h7>
+                </div>
+                <div><h7 class="shadow-black">
+                    <span class="bg4 w8 ds1 bdr5 m13" style="vertical-align: middle"><span class="sp call2 ds m12"></span></span>
+                    +91 1232-225362, 227870
+                </h7>
+                </div>
+                <div style="padding-left: 3em"><h7 class="shadow-black">
+                    +91 9837066299
+                </h7>
+                </div>
+            </div>
+
+        </div>
+      </div>
     </footer>
+{% endif %}
