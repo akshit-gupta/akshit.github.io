@@ -23,7 +23,7 @@ title: 'Mahamaya Paints & Chemicals'
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: "https://akshit-gupta.github.io/akshit.github.io/"
+url: "https://akshit-gupta.github.io/akshit.github.io"
 baseurl: ""
 urlimg: 'https://akshit-gupta.github.io/akshit.github.io/images/'
 location_icon: location4.png
@@ -226,7 +226,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-google_analytics_tracking_id: UA-60112281-1
+#google_analytics_tracking_id: UA-60112281-1
 
 
 
