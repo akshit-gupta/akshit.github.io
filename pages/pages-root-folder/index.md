@@ -19,7 +19,7 @@ widget2:
 widget3:
   title: "Mineral Powder"
   url: "/minerals/"
-  image: powder.jpg
+  image: mpowder.jpg
 
 # Use the call for action to show a button on the frontpage
 #

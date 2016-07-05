@@ -51,7 +51,7 @@ permalink: "/contact/"
 
 <h5 >
  <span>
-      <img src="{{ site.urlimg }}/email.png" style="height:40px;width: 40px;" >
+      <img src="{{ site.urlimg }}/{{ site.mail_icon}}" style="height:30px;width: 40px;" >
  </span>
  <span style="padding-left: 0.7em">
     mahamayapaints@yahoo.co.in
@@ -65,7 +65,7 @@ permalink: "/contact/"
 </div>
 
 <h5 >
-     <span><img src="{{ site.urlimg }}/phone1.png" style="height:40px;width: 40px" ></span>
+     <span><img src="{{ site.urlimg }}/{{ site.phone_icon}}" style="height:40px;width: 40px" ></span>
      <span style="padding-left: 0.7em">+91 1232-225362, 227870</span>
 
       <div style="padding-left: 3em">
