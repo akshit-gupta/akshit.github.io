@@ -55,7 +55,9 @@ permalink: "/contact/"
  </span>
  <span style="padding-left: 0.7em">
     mahamayapaints@yahoo.co.in
-    contact@mahamayapaints.com
+    <div style="padding-left: 3em">
+      contact@mahamayapaints.com
+     </div>
  </span>
 </h5>
 
