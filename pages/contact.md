@@ -55,6 +55,7 @@ permalink: "/contact/"
  </span>
  <span style="padding-left: 0.7em">
     mahamayapaints@yahoo.co.in
+    contact@mahamayapaints.com
  </span>
 </h5>
 
@@ -69,7 +70,7 @@ permalink: "/contact/"
      <span style="padding-left: 0.7em">+91 1232-225362, 227870</span>
 
       <div style="padding-left: 3em">
-         +91 8941000571
+         +91 9837066299
       </div>
  </h5>
 
