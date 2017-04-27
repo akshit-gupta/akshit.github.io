@@ -72,7 +72,7 @@ permalink: "/contact/"
      <span style="padding-left: 0.7em">+91 1232-225362, 227870</span>
 
       <div style="padding-left: 3em">
-         +91 9837066299
+         +91 8941000571
       </div>
  </h5>
 
